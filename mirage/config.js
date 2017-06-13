@@ -1,6 +1,7 @@
 export default function() {
   this.namespace = '/api';
 
+  // mocks up the db with contained data.
   let songs = [{
     type: 'songs',
     id: 'sound-of-silence',
@@ -33,6 +34,7 @@ export default function() {
     }
   }]
 
+  // filters the songs if query parameters are set.
   this.get('/songs', function(db, request) {
     if(request.queryParams.genre !== undefined) {
       let filteredSongs = songs.filter(function(i) {
@@ -44,7 +46,7 @@ export default function() {
     }
   });
 
-  // Find and return the provided rental from our rental list above
+  // Find and return the provided song from our song list above.
   this.get('/songs/:id', function (db, request) {
     return { data: songs.find((song) => request.params.id === song.id) };
   });
