@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const rockGenres = ['Soft Rock', 'Rock', 'Hard Rock'];
+const rockGenres = ['Folk Rock', 'Rock', 'Slowcore Rock'];
 
 
 export function songType([filteredSongs]) {

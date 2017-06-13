@@ -7,8 +7,8 @@ export default function() {
     id: 'sound-of-silence',
     attributes: {
       title: 'Sound of Silence',
-      composer: 'Veruca Salt',
-      genre: 'Accoustic',
+      composer: 'Paul Simon',
+      genre: 'Folk Rock',
       duration: '3:09',
       image: 'https://i.ytimg.com/vi/4zLfCnGVeL4/hqdefault.jpg'
     }
@@ -18,7 +18,7 @@ export default function() {
     attributes: {
       title: 'This Mess we are in',
       composer: 'PJ Harvey',
-      genre: 'Soft Rock',
+      genre: 'Alternative Indie/ Pop',
       duration: '4:09',
       image: 'https://images.991.com/180x180/PJ+Harvey+Stories+From+The+City+Stories+-168794.jpg'
     }
@@ -28,7 +28,7 @@ export default function() {
     attributes: {
       title: 'Friday night',
       composer: 'Chinawoman',
-      genre: 'Ballad',
+      genre: 'Slowcore Rock',
       duration: '2:07',
       image: 'https://i.ytimg.com/vi/cnPjc1RvhQ0/hqdefault.jpg'
     }
