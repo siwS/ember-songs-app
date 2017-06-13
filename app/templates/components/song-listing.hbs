@@ -1,0 +1,22 @@
+<!-- how a component shows! -->
+
+<article class="listing">
+  <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}" >
+    <img src="{{song.image}}" alt="">
+    <small>View Larger</small>
+  </a>
+
+  <h3>{{#link-to "songs.show" song}}{{song.title}}{{/link-to}}</h3>
+
+  <div class="detail composer">
+    <span>Owner:</span> {{song.composer}}
+  </div>
+  <div class="detail duration">
+    <span>Duration:</span> {{song.duration}}
+  </div>
+  <div class="detail type">
+    <!-- Adding a helper here to manipulate data -->
+    <span>Type:</span> {{song-type song.genre}}
+    - {{song.genre}}
+  </div>
+</article>

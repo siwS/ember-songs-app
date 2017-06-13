@@ -1,0 +1,17 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <p>
+    This is the actual Songs page!
+  </p>
+
+</div>
+
+{{#list-filter filter=(action 'filterByType') as |songs|}}
+  <ul class="results">
+    {{#each songs as |songUnit|}}
+      <li>{{song-listing song=songUnit}}</li>
+    {{/each}}
+  </ul>
+{{/list-filter}}
+
+{{outlet}}

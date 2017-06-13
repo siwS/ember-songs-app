@@ -1,0 +1,18 @@
+<div class="jumbo show-listing">
+  <h2 class="title">{{model.title}}</h2>
+  <div class="right detail-section">
+    <div class="detail owner">
+      <strong>Composer:</strong> {{model.composer}}
+    </div>
+    <div class="detail">
+      <strong>Type:</strong> {{song-type model.genre}} - {{model.genre}}
+    </div>
+    <div class="detail">
+      <strong>Location:</strong> {{model.duration}}
+    </div>
+  </div>
+  <img src="{{model.image}}" class="rental-pic">
+</div>
+
+
+{{outlet}}
